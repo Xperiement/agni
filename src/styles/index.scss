@@ -1,0 +1,23 @@
+:root {
+  --font: "Poppins", sans-serif;
+  --background: white;
+  --foreground: #212121;
+  --deep: #663c31;
+  --medium: #ea2e11;
+  --light: #f2791f;
+  --normal: #474747;
+
+  --gradient: linear-gradient(to bottom right, var(--medium), var(--light));
+}
+
+*:not(i) {
+  font-family: var(--font);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
