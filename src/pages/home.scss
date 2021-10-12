@@ -1,0 +1,113 @@
+.hero {
+  --heroPadding: 1rem;
+  position: relative;
+  width: calc(100% - calc(var(--heroPadding) * 2));
+  height: calc(100vh - calc(var(--heroPadding) * 2));
+  padding: var(--heroPadding);
+  overflow: hidden;
+
+  .twoSide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    // background: red;
+
+    div {
+      width: fit-content;
+      height: 100%;
+    }
+
+    .logoHolder {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .agni {
+        width: 100%;
+        max-width: 230px;
+        filter: drop-shadow(-2px -3px 10px rgba(251, 205, 49, 0.18))
+          drop-shadow(9px 10px 10px rgba(235, 52, 20, 0.27));
+      }
+    }
+
+    .infoHolder {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 1rem;
+
+      .heroHead {
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+        font-weight: 700;
+
+        span {
+          color: var(--medium);
+        }
+      }
+
+      .heroSubHead {
+        font-size: 1.3rem;
+        color: var(--deep);
+        font-weight: 400;
+
+        span {
+          font-weight: 700;
+        }
+      }
+
+      .heroButton {
+        background: var(--gradient);
+        border: 0;
+        font-size: 1.05rem;
+        font-weight: 300;
+        color: var(--background);
+        padding: 0.9rem 1.2rem;
+        border-radius: 5px;
+        letter-spacing: 1px;
+
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        transition: filter 300ms, transform 300ms;
+
+        i {
+          margin-right: 1rem;
+          font-size: 1.5rem;
+        }
+        span {
+          margin-left: 0.2rem;
+          font-weight: 700;
+        }
+
+        &:hover {
+          filter: drop-shadow(9px 10px 10px rgba(251, 205, 49, 0.18))
+            drop-shadow(-2px -3px 10px rgba(235, 52, 20, 0.27)) contrast(1.8);
+        }
+
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+
+  .agniVibe {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    opacity: 0.15;
+    filter: saturate(0);
+  }
+}
