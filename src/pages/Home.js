@@ -1,10 +1,12 @@
 import React from "react";
 import "./home.scss";
 import logo from "../assets/agni.png";
+import DefaultNav from "../components/DefaultNav";
 
 export default function Home() {
   return (
     <div>
+      <DefaultNav />
       <div className="hero">
         <div className="twoSide">
           <div className="logoHolder">
