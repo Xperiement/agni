@@ -161,3 +161,37 @@ section.features {
     }
   }
 }
+
+section.improvements {
+  & > .head {
+    margin-bottom: 2rem;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    .card {
+      .head {
+        color: var(--medium);
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+
+      ul {
+        padding-left: 1.2rem;
+      }
+
+      li {
+        padding-left: 0;
+        line-height: 1.6rem;
+        list-style: disc;
+        margin-bottom: 1rem;
+        letter-spacing: 0.8px;
+        opacity: 0.95;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

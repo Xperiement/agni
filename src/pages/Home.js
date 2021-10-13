@@ -3,6 +3,7 @@ import "./home.scss";
 import logo from "../assets/agni.png";
 import DefaultNav from "../components/DefaultNav";
 import Features from "../components/Home/Features";
+import Improvements from "../components/Home/Improvements";
 
 export default function Home() {
   return (
@@ -33,6 +34,8 @@ export default function Home() {
       </div>
 
       <Features />
+
+      <Improvements />
     </div>
   );
 }
