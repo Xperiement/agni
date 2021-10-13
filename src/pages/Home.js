@@ -2,11 +2,13 @@ import React from "react";
 import "./home.scss";
 import logo from "../assets/agni.png";
 import DefaultNav from "../components/DefaultNav";
+import Features from "../components/Home/Features";
 
 export default function Home() {
   return (
     <div>
       <DefaultNav />
+
       <div className="hero">
         <div className="twoSide">
           <div className="logoHolder">
@@ -29,6 +31,8 @@ export default function Home() {
         </div>
         <img alt="none" className="agniVibe" src={logo}></img>
       </div>
+
+      <Features />
     </div>
   );
 }

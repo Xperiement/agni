@@ -7,6 +7,12 @@
   --light: #f2791f;
   --normal: #474747;
 
+  --green: #49d280;
+  --indigo: #496fd2;
+  --red: #d24949;
+  --deep-red: #d24972;
+  --blue: #4990d2;
+
   --gradient: linear-gradient(to bottom right, var(--medium), var(--light));
 }
 
@@ -24,4 +30,24 @@ body {
 
 p {
   margin: 0;
+}
+
+.green-txt {
+  color: var(--green);
+}
+
+.indigo-txt {
+  color: var(--indigo);
+}
+
+.red-txt {
+  color: var(--red);
+}
+
+.deep-red-txt {
+  color: var(--deep-red);
+}
+
+.blue-txt {
+  color: var(--blue);
 }
