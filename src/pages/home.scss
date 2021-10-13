@@ -116,13 +116,15 @@ section {
   padding: 2.5rem;
   padding-top: 7rem;
 
-  .head {
+  & > .head {
     font-size: 3.5rem;
     font-weight: 700;
     color: var(--foreground);
     margin-bottom: 1rem;
   }
+}
 
+section.features {
   .list {
     display: grid;
     grid-template-columns: repeat(auto-fill, 400px);
