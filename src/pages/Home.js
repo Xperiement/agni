@@ -4,6 +4,7 @@ import logo from "../assets/agni.png";
 import DefaultNav from "../components/DefaultNav";
 import Features from "../components/Home/Features";
 import Improvements from "../components/Home/Improvements";
+import Team from "../components/Home/Team";
 
 export default function Home() {
   return (
@@ -36,6 +37,8 @@ export default function Home() {
       <Features />
 
       <Improvements />
+
+      <Team />
     </div>
   );
 }
