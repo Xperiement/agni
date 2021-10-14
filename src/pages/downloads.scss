@@ -1,0 +1,94 @@
+.sidebar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 18rem;
+  background: var(--sub-accent-bg);
+
+  .head {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    gap: 1.5rem;
+
+    img {
+      width: 3rem;
+      height: 3rem;
+      object-fit: contain;
+    }
+
+    div {
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 1.15rem;
+    }
+  }
+
+  .subHead {
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    color: var(--deep);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+  }
+
+  .list {
+    height: calc(100% - 12rem);
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-right: 0.5rem;
+
+    overflow-y: auto;
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: var(--scroll-bg);
+      border-radius: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: var(--light-plus);
+      border-radius: 10px;
+    }
+
+    .card {
+      margin: 0rem 0.8rem;
+      padding: 0.7rem 0.7rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+      border-radius: 5px;
+      color: var(--normal);
+      cursor: pointer;
+      user-select: none;
+
+      &:hover {
+        background: var(--sub-background);
+      }
+    }
+
+    .card:not(.enabled) {
+      opacity: 0.9;
+      font-size: 1rem;
+    }
+
+    .card.enabled {
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: white;
+
+      font-weight: bold;
+      background: var(--gradient);
+      padding: 1rem 0.7rem;
+    }
+  }
+}
