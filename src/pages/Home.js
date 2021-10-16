@@ -6,10 +6,10 @@ import Features from "../components/Home/Features";
 import Improvements from "../components/Home/Improvements";
 import Team from "../components/Home/Team";
 
-export default function Home() {
+export default function Home({ dark, dark_toggle }) {
   return (
     <div>
-      <DefaultNav />
+      <DefaultNav dark={dark} dark_toggle={dark_toggle} />
 
       <div className="hero">
         <div className="twoSide">
