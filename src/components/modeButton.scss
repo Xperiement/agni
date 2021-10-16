@@ -1,0 +1,61 @@
+.modeBtn {
+  position: relative;
+  width: 4rem;
+  height: 1.8rem;
+  border-radius: 100px;
+  cursor: pointer;
+
+  &::after,
+  &::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--gradient);
+    border-radius: 100px;
+    opacity: 1;
+    transition: opacity 600ms;
+  }
+
+  &::before {
+    background: var(--foreground);
+    opacity: 0;
+  }
+
+  i {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: white;
+    padding-left: 0.4rem;
+    transition: all 500ms ease;
+  }
+
+  i.enabled {
+    transform: translate(2.2rem, -50%);
+    opacity: 0;
+  }
+
+  .moon.enabled {
+    background: var(--gradient);
+    background-clip: text;
+    color: transparent;
+    opacity: 1;
+  }
+
+  .moon:not(.enabled) {
+    opacity: 0;
+  }
+}
+
+.modeBtn.enabled {
+  &::after {
+    opacity: 0;
+  }
+
+  &::before {
+    opacity: 1;
+  }
+}
