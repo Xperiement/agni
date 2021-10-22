@@ -6,8 +6,10 @@ import Features from "../components/Home/Features";
 import Improvements from "../components/Home/Improvements";
 import Team from "../components/Home/Team";
 import Footer from "../components/Home/Footer";
+import { useHistory } from "react-router";
 
 export default function Home({ dark, dark_toggle, state }) {
+  const history = useHistory();
   return (
     <div>
       <DefaultNav dark={dark} dark_toggle={dark_toggle} />
@@ -26,7 +28,12 @@ export default function Home({ dark, dark_toggle, state }) {
               Blazing <span>Fast</span> & <span>Effective</span>
             </p>
 
-            <button className="heroButton">
+            <button
+              className="heroButton"
+              onClick={() => {
+                history.push("/downloads");
+              }}
+            >
               <i className="ri-download-cloud-2-line"></i>
               Download <span>NOW</span>
             </button>
