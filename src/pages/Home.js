@@ -5,13 +5,14 @@ import DefaultNav from "../components/DefaultNav";
 import Features from "../components/Home/Features";
 import Improvements from "../components/Home/Improvements";
 import Team from "../components/Home/Team";
+import Footer from "../components/Home/Footer";
 
-export default function Home({ dark, dark_toggle }) {
+export default function Home({ dark, dark_toggle, state }) {
   return (
     <div>
       <DefaultNav dark={dark} dark_toggle={dark_toggle} />
 
-      <div className="hero">
+      <div id="home" className="hero">
         <div className="twoSide">
           <div className="logoHolder">
             <img alt="none" className="agni" src={logo}></img>
@@ -31,14 +32,25 @@ export default function Home({ dark, dark_toggle }) {
             </button>
           </div>
         </div>
-        <img alt="none" className="agniVibe" src={logo}></img>
+        <img
+          alt="none"
+          className={`agniVibe ${dark ? "dark" : ""}`}
+          src={logo}
+        ></img>
       </div>
 
       <Features />
 
-      <Improvements />
+      <Improvements data={state.improvements} />
 
-      <Team />
+      <Team data={state.credits} />
+
+      <Footer
+        start={state.started}
+        end={state.ends}
+        donate={state.donate}
+        groups={state.support_groups}
+      />
     </div>
   );
 }

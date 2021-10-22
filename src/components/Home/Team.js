@@ -1,5 +1,4 @@
 import React from "react";
-import avatar from "../../assets/avatar.jpg";
 
 const logos = [
   {
@@ -48,65 +47,22 @@ const icoMapper = (type) => {
   return exists ? exists.ico : "ri-link";
 };
 
-const data = [
-  {
-    name: "Alex Suprun",
-    role: "Founder",
-    avatar:
-      "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
-    links: [
-      {
-        type: "github",
-        url: "https://www.github.com",
-      },
-      {
-        type: "facebook",
-        url: "https://www.github.com",
-      },
-      {
-        type: "twitter",
-        url: "https://www.github.com",
-      },
-    ],
-  },
-  {
-    name: "Nature",
-    role: "Energy",
-    avatar:
-      "https://images.unsplash.com/photo-1551008475-4533d141425b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
-    links: [
-      {
-        type: "github",
-        url: "https://www.github.com",
-      },
-      {
-        type: "facebook",
-        url: "https://www.github.com",
-      },
-      {
-        type: "twitter",
-        url: "https://www.github.com",
-      },
-    ],
-  },
-];
-
-export default function Team() {
+export default function Team({ data }) {
   return (
-    <section className="team">
+    <section id="about" className="team">
       <div className="head">Our Team</div>
 
       <div className="list">
-        {data.map((item) => (
-          <div className="card">
+        {data.map((item, id) => (
+          <div className="card" key={id}>
             <img src={item.avatar} alt="" className="avatar" />
             <div className="info">
               <div className="name">{item.name}</div>
               <div className="role">{item.role}</div>
             </div>
             <div className="links">
-              {item.links.map((fitem) => (
-                <a href={fitem.url} target="_blank" rel="noreferrer">
+              {item.links.map((fitem, fid) => (
+                <a key={fid} href={fitem.url} target="_blank" rel="noreferrer">
                   <i className={icoMapper(fitem.type)} />
                 </a>
               ))}
