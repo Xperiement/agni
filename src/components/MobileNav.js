@@ -49,7 +49,7 @@ export default function MobileNav({
         />
       )}
 
-      {route !== "/downloads" && (
+      {!route.startsWith("/downloads") && (
         <ThemeButton enabled={dark} action={dark_toggle} />
       )}
     </nav>
