@@ -5,6 +5,7 @@
   height: calc(100vh - calc(var(--heroPadding) * 2));
   padding: var(--heroPadding);
   overflow: hidden;
+  isolation: isolate;
 
   .twoSide {
     width: 100%;
@@ -79,7 +80,7 @@
         display: inline-flex;
         align-items: center;
         cursor: pointer;
-        transition: filter 300ms, transform 300ms;
+        transition: filter 300ms, transform 300ms, color 300ms;
 
         i {
           margin-right: 1rem;
@@ -104,7 +105,7 @@
 
   .agniVibe {
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     left: 50%;
     top: 30%;
     transform: translateX(-50%);
