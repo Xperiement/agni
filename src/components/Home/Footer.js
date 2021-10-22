@@ -50,7 +50,17 @@ export default function Footer({ groups = [], donate = [], start, end }) {
         </div>
       </div>
       <div className="authorCont">
-        <img className="author" src={author} alt="" />
+        <img
+          onClick={() => {
+            const link = document.createElement("a");
+            link.href = "https://epicX67.github.io";
+            link.setAttribute("target", "blank");
+            link.click();
+          }}
+          className="author"
+          src={author}
+          alt=""
+        />
       </div>
     </footer>
   );
