@@ -1,0 +1,178 @@
+.installation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+
+  & > .wrapper {
+    max-width: 1150px;
+    width: calc(100% - 5rem);
+    min-height: 100vh;
+    padding: 2.2rem;
+    padding-top: 4rem;
+
+    .head {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--foreground);
+      margin-bottom: 1rem;
+    }
+
+    .subHead {
+      color: var(--normal);
+      font-size: 2.5rem;
+      font-weight: 200;
+      width: 100%;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--medium);
+      margin-bottom: 1rem;
+
+      span {
+        font-size: 3rem;
+        font-weight: 600;
+        color: var(--medium);
+      }
+    }
+
+    .subHead.right {
+      text-align: right;
+    }
+
+    .process {
+      padding-left: 0;
+      line-height: 2rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.8px;
+      opacity: 0.95;
+      font-size: 0.9rem;
+      color: var(--normal);
+    }
+
+    .noteWrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+
+    .noteContainer {
+      position: relative;
+      padding: 1rem;
+      isolation: isolate;
+      border-radius: 5px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-start;
+      gap: 1.1rem;
+      width: fit-content;
+      margin: 1rem 0rem;
+      background: rgba(95, 255, 130, 0.082);
+      transition: background 300ms;
+
+      i {
+        font-size: 2rem;
+        color: #3fb158;
+        transition: color 300ms;
+      }
+
+      .note {
+        z-index: 1;
+        color: #3faa57;
+        max-width: 40ch;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 1.5rem;
+        font-size: 0.8rem;
+        transition: color 300ms;
+
+        span {
+          font-weight: 600;
+        }
+      }
+
+      &:hover {
+        background: rgb(95, 255, 130);
+
+        & > * {
+          color: black;
+        }
+      }
+    }
+
+    .noteContainer.error {
+      background: rgba(255, 95, 95, 0.082);
+      .note,
+      i {
+        color: var(--medium);
+      }
+
+      &:hover {
+        background: rgb(255, 95, 95);
+
+        & > * {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .installation {
+    padding-top: 6rem;
+    & > .wrapper {
+      width: calc(100% - 3rem);
+      padding: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .installation {
+    padding-top: 1rem;
+
+    & > .wrapper {
+      width: calc(100% - 3rem);
+      padding: 1.2rem;
+      padding-top: 1rem;
+
+      .head {
+        font-size: 2.2rem;
+      }
+
+      .subHead {
+        color: var(--normal);
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+        span {
+          font-size: 2.5rem;
+        }
+      }
+
+      .process {
+        font-size: 0.8rem;
+        line-height: 1.7rem;
+      }
+
+      .noteWrapper {
+        flex-direction: column;
+        gap: 0rem;
+      }
+
+      .noteContainer {
+        gap: 0.8rem;
+
+        i {
+          font-size: 1.6rem;
+        }
+
+        .note {
+          font-size: 0.8rem;
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
