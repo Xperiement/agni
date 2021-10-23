@@ -51,7 +51,7 @@
     }
   ],
   "start_url": "https://xperiement.github.io/agni/",
-  "scope": "/agni/",
+  "scope": ".",
   "prefer_related_applications": false,
   "display": "standalone",
   "theme_color": "#1F1F1F",
