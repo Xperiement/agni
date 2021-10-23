@@ -4,12 +4,12 @@
   "description": "Know about AGNi. Get Kernels, Firmwares, Mods for supported devices as soon as possible.",
   "icons": [
     {
-      "src": "./icons/icon_x192.png",
+      "src": "./icons/icon_x192_nm.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "./icons/icon_x512.png",
+      "src": "./icons/icon_x512_nm.png",
       "sizes": "512x512",
       "type": "image/png"
     },
@@ -56,12 +56,12 @@
       "url": "https://xperiement.github.io/agni/downloads",
       "icons": [
         {
-          "src": "./icons/download_icon_x192.png",
+          "src": "./icons/download_icon_x192_nm.png",
           "sizes": "192x192",
           "type": "image/png"
         },
         {
-          "src": "./icons/download_icon_x512.png",
+          "src": "./icons/download_icon_x512_nm.png",
           "sizes": "512x512",
           "type": "image/png"
         },
