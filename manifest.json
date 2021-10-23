@@ -31,7 +31,7 @@
       "src": "./icons/icon_x144.png",
       "type": "image/png",
       "sizes": "144x144",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     },
     {
       "src": "./icons/icon_x192.png",
@@ -109,7 +109,7 @@
           "src": "./icons/download_icon_x144.png",
           "type": "image/png",
           "sizes": "144x144",
-          "purpose": "maskable"
+          "purpose": "any maskable"
         },
         {
           "src": "./icons/download_icon_x192.png",
