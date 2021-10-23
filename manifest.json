@@ -4,24 +4,24 @@
   "description": "Know about AGNi. Get Kernels, Firmwares, Mods for supported devices as soon as possible.",
   "icons": [
     {
-      "src": "https://abs.twimg.com/responsive-web/client-web/icon-default.ee534d85.png",
+      "src": "./icons/icon_x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://abs.twimg.com/responsive-web/client-web/icon-default-large.8e027b65.png",
+      "src": "./icons/icon_x512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
       "purpose": "maskable",
-      "src": "https://abs.twimg.com/responsive-web/client-web/icon-default-maskable.2fd29c85.png",
+      "src": "./icons/icon_x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
       "purpose": "maskable",
-      "src": "https://abs.twimg.com/responsive-web/client-web/icon-default-maskable-large.ee2b7aa5.png",
+      "src": "./icons/icon_x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
