@@ -4,52 +4,26 @@
   "description": "Know about AGNi. Get Kernels, Firmwares, Mods for supported devices as soon as possible.",
   "icons": [
     {
-      "src": "./icons/icon_x48.png",
-      "type": "image/png",
-      "sizes": "48x48",
-      "purpose": "maskable"
-    },
-    {
-      "src": "./icons/icon_x72.png",
-      "type": "image/png",
-      "sizes": "72x72",
-      "purpose": "maskable"
-    },
-    {
-      "src": "./icons/icon_x96.png",
-      "type": "image/png",
-      "sizes": "96x96",
-      "purpose": "maskable"
-    },
-    {
-      "src": "./icons/icon_x128.png",
-      "type": "image/png",
-      "sizes": "128x128",
-      "purpose": "maskable"
-    },
-    {
-      "src": "./icons/icon_x144.png",
-      "type": "image/png",
-      "sizes": "144x144",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "./icons/icon_x192.png",
-      "type": "image/png",
+      "src": "https://abs.twimg.com/responsive-web/client-web/icon-default.ee534d85.png",
       "sizes": "192x192",
-      "purpose": "maskable"
+      "type": "image/png"
     },
     {
-      "src": "./icons/icon_x384.png",
-      "type": "image/png",
-      "sizes": "384x384",
-      "purpose": "maskable"
-    },
-    {
-      "src": "./icons/icon_x512.png",
-      "type": "image/png",
+      "src": "https://abs.twimg.com/responsive-web/client-web/icon-default-large.8e027b65.png",
       "sizes": "512x512",
-      "purpose": "maskable"
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "src": "https://abs.twimg.com/responsive-web/client-web/icon-default-maskable.2fd29c85.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "src": "https://abs.twimg.com/responsive-web/client-web/icon-default-maskable-large.ee2b7aa5.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "screenshots": [
