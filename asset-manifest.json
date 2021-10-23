@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/agni/static/css/main.83c2ecae.chunk.css",
+    "main.css": "/agni/static/css/main.4de0b9a4.chunk.css",
     "main.js": "/agni/static/js/main.67645cd8.chunk.js",
     "main.js.map": "/agni/static/js/main.67645cd8.chunk.js.map",
     "runtime-main.js": "/agni/static/js/runtime-main.8f3a750e.js",
@@ -12,7 +12,7 @@
     "service-worker.js": "/agni/service-worker.js",
     "service-worker.js.map": "/agni/service-worker.js.map",
     "static/css/2.5ae64335.chunk.css.map": "/agni/static/css/2.5ae64335.chunk.css.map",
-    "static/css/main.83c2ecae.chunk.css.map": "/agni/static/css/main.83c2ecae.chunk.css.map",
+    "static/css/main.4de0b9a4.chunk.css.map": "/agni/static/css/main.4de0b9a4.chunk.css.map",
     "static/js/2.d0865f43.chunk.js.LICENSE.txt": "/agni/static/js/2.d0865f43.chunk.js.LICENSE.txt",
     "static/media/agni.a7dd9da9.png": "/agni/static/media/agni.a7dd9da9.png",
     "static/media/device.56cbaf47.png": "/agni/static/media/device.56cbaf47.png",
@@ -23,7 +23,7 @@
     "static/js/runtime-main.8f3a750e.js",
     "static/css/2.5ae64335.chunk.css",
     "static/js/2.d0865f43.chunk.js",
-    "static/css/main.83c2ecae.chunk.css",
+    "static/css/main.4de0b9a4.chunk.css",
     "static/js/main.67645cd8.chunk.js"
   ]
 }
