@@ -68,7 +68,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "https://xperiement.github.io/agni",
+  "start_url": "https://xperiement.github.io/agni/",
   "scope": ".",
   "prefer_related_applications": false,
   "display": "standalone",
