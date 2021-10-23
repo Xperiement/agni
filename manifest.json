@@ -1,6 +1,7 @@
 {
   "short_name": "AGNi",
   "name": "AGNi Kernel",
+  "description": "Know about AGNi. Get Kernels, Firmwares, Mods for supported devices as soon as possible.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -48,6 +49,23 @@
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./icons/s1.png",
+      "sizes": "1080x1920",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/s2.png",
+      "sizes": "1080x1920",
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/s3.png",
+      "sizes": "1080x1920",
+      "type": "image/png"
     }
   ],
   "start_url": "https://xperiement.github.io/agni/",
