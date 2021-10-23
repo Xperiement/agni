@@ -78,7 +78,7 @@
     {
       "name": "AGNi Downloads",
       "description": "Download Resources of AGNi",
-      "url": "/downloads",
+      "url": "https://xperiement.github.io/agni/downloads",
       "icons": [
         {
           "src": "./icons/download_icon_x48.png",
