@@ -53,17 +53,17 @@
   ],
   "screenshots": [
     {
-      "src": "./icons/s1.png",
+      "src": "./screenshots/s1.png",
       "sizes": "1080x1920",
       "type": "image/png"
     },
     {
-      "src": "./icons/s2.png",
+      "src": "./screenshots/s2.png",
       "sizes": "1080x1920",
       "type": "image/png"
     },
     {
-      "src": "./icons/s3.png",
+      "src": "./screenshots/s3.png",
       "sizes": "1080x1920",
       "type": "image/png"
     }
