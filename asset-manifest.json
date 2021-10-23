@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/agni/static/css/main.4de0b9a4.chunk.css",
-    "main.js": "/agni/static/js/main.67645cd8.chunk.js",
-    "main.js.map": "/agni/static/js/main.67645cd8.chunk.js.map",
+    "main.js": "/agni/static/js/main.556e1dd3.chunk.js",
+    "main.js.map": "/agni/static/js/main.556e1dd3.chunk.js.map",
     "runtime-main.js": "/agni/static/js/runtime-main.8f3a750e.js",
     "runtime-main.js.map": "/agni/static/js/runtime-main.8f3a750e.js.map",
     "static/css/2.5ae64335.chunk.css": "/agni/static/css/2.5ae64335.chunk.css",
@@ -14,9 +14,9 @@
     "static/css/2.5ae64335.chunk.css.map": "/agni/static/css/2.5ae64335.chunk.css.map",
     "static/css/main.4de0b9a4.chunk.css.map": "/agni/static/css/main.4de0b9a4.chunk.css.map",
     "static/js/2.d0865f43.chunk.js.LICENSE.txt": "/agni/static/js/2.d0865f43.chunk.js.LICENSE.txt",
-    "static/media/agni.a7dd9da9.png": "/agni/static/media/agni.a7dd9da9.png",
-    "static/media/device.56cbaf47.png": "/agni/static/media/device.56cbaf47.png",
-    "static/media/epicX.3816f18b.png": "/agni/static/media/epicX.3816f18b.png",
+    "static/media/agni.b11e4e2f.webp": "/agni/static/media/agni.b11e4e2f.webp",
+    "static/media/device.72432646.webp": "/agni/static/media/device.72432646.webp",
+    "static/media/epicX.ce95aad2.webp": "/agni/static/media/epicX.ce95aad2.webp",
     "static/media/remixicon.css": "/agni/static/media/remixicon.f2616f59.ttf"
   },
   "entrypoints": [
@@ -24,6 +24,6 @@
     "static/css/2.5ae64335.chunk.css",
     "static/js/2.d0865f43.chunk.js",
     "static/css/main.4de0b9a4.chunk.css",
-    "static/js/main.67645cd8.chunk.js"
+    "static/js/main.556e1dd3.chunk.js"
   ]
 }
