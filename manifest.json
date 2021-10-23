@@ -4,11 +4,6 @@
   "description": "Know about AGNi. Get Kernels, Firmwares, Mods for supported devices as soon as possible.",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
       "src": "./icons/icon_x48.png",
       "type": "image/png",
       "sizes": "48x48",
