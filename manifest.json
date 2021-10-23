@@ -68,7 +68,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/",
+  "start_url": "/agni",
   "scope": ".",
   "prefer_related_applications": false,
   "display": "standalone",
