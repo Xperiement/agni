@@ -8,6 +8,7 @@ import "./downloads.scss";
 import Card from "../components/Downloads/Card";
 import axios from "axios";
 import MDevices from "../components/Downloads/MDevices";
+import { env_data } from "../vars";
 
 const initObj = {
   name: "No Device Found",
@@ -74,56 +75,52 @@ export default function Downloads({ showDevices, setShowDevices }) {
   const [tab, setTab] = useState(() => getCurrentTab(tabs));
 
   useEffect(() => {
-    axios
-      .get(
-        "https://raw.githubusercontent.com/Xperiement/agni_data/main/data.json"
-      )
-      .then((res) => {
-        if (res.status !== 200) return;
+    axios.get(env_data.device_data).then((res) => {
+      if (res.status !== 200) return;
 
-        const aName = name ? name.trim().toLowerCase() : undefined;
-        const aType = type ? type.trim().toLowerCase() : undefined;
+      const aName = name ? name.trim().toLowerCase() : undefined;
+      const aType = type ? type.trim().toLowerCase() : undefined;
 
-        const raw = res.data;
+      const raw = res.data;
 
-        if (aName) {
-          const nRaw = raw.map((item) => {
-            const aItemName = item.name.toLowerCase();
-            const aItemCodeName = item.code_name.toLowerCase();
-            item.enabled =
-              aItemName === aName || aItemCodeName === aName ? true : false;
-            return item;
-          });
-          const deviceFound = nRaw.find((item) => item.enabled);
-          if (!deviceFound) {
-            // setNotFound(true);
-            history.push("/404");
-            return;
-          }
-          setDevices(nRaw);
-          setDevice(deviceFound);
+      if (aName) {
+        const nRaw = raw.map((item) => {
+          const aItemName = item.name.toLowerCase();
+          const aItemCodeName = item.code_name.toLowerCase();
+          item.enabled =
+            aItemName === aName || aItemCodeName === aName ? true : false;
+          return item;
+        });
+        const deviceFound = nRaw.find((item) => item.enabled);
+        if (!deviceFound) {
+          // setNotFound(true);
+          history.push("/404");
+          return;
+        }
+        setDevices(nRaw);
+        setDevice(deviceFound);
 
-          const aTabs = getTabs(deviceFound, aType);
-          const aTab = aTabs.find((item) => item.enabled);
+        const aTabs = getTabs(deviceFound, aType);
+        const aTab = aTabs.find((item) => item.enabled);
 
-          if (aType && !aTab) {
-            // setNotFound(true);
-            history.push("/404");
-            return;
-          }
-
-          setTabs(aTabs);
-          setTab(aTab);
+        if (aType && !aTab) {
+          // setNotFound(true);
+          history.push("/404");
           return;
         }
 
-        raw[0].enabled = true;
-        setDevices(raw);
-        setDevice(raw[0]);
-        const aTabs = getTabs(raw[0], raw[0].resources[0].type);
         setTabs(aTabs);
-        setTab(aTabs[0]);
-      });
+        setTab(aTab);
+        return;
+      }
+
+      raw[0].enabled = true;
+      setDevices(raw);
+      setDevice(raw[0]);
+      const aTabs = getTabs(raw[0], raw[0].resources[0].type);
+      setTabs(aTabs);
+      setTab(aTabs[0]);
+    });
   }, []);
 
   return (

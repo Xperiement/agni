@@ -8,6 +8,7 @@ import Installation from "./pages/Installation";
 import axios from "axios";
 import NotFound from "./components/Downloads/NotFound";
 import MobileNav from "./components/MobileNav";
+import { env_data } from "./vars";
 
 function App() {
   const { scrollDirection } = useScrollDirection();
@@ -35,13 +36,9 @@ function App() {
   }, []);
 
   useEffect(() => {
-    axios
-      .get(
-        "https://raw.githubusercontent.com/Xperiement/agni_data/main/base.json"
-      )
-      .then((res) => {
-        if (res.status === 200) setState(res.data);
-      });
+    axios.get(env_data.base_data).then((res) => {
+      if (res.status === 200) setState(res.data);
+    });
   }, []);
 
   useEffect(() => {

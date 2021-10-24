@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import history from "./history.js";
+import { env_data } from "./vars";
 import App from "./App.js";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import "remixicon/fonts/remixicon.css";
@@ -9,7 +10,7 @@ import "./styles/index.scss";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router basename="/agni" history={history}>
+    <Router basename={env_data.base_root || "/"} history={history}>
       <App />
     </Router>
   </React.StrictMode>,
