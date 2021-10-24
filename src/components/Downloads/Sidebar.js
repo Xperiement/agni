@@ -1,6 +1,6 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
-import logo from "../../assets/agni.png";
+import logo from "../../assets/agni.webp";
 import { getTabs } from "../../pages/Downloads";
 
 export default function Sidebar({

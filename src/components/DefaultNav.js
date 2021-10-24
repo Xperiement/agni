@@ -1,6 +1,6 @@
 import React from "react";
 import "./defaultnav.scss";
-import Logo from "../assets/agni.png";
+import Logo from "../assets/agni.webp";
 import { HashLink } from "react-router-hash-link";
 import ModeButton from "./ModeButton";
 

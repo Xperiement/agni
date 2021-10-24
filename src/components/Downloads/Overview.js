@@ -1,6 +1,6 @@
 import React from "react";
-import device from "../../assets/device.png";
-import logo from "../../assets/agni.png";
+import device from "../../assets/device.webp";
+import logo from "../../assets/agni.webp";
 
 export default function Overview({ model, code_name }) {
   return (

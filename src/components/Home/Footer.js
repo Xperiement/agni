@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../../assets/agni.png";
-import author from "../../assets/epicX.png";
+import logo from "../../assets/agni.webp";
+import author from "../../assets/epicX.webp";
 
 export default function Footer({ groups = [], donate = [], start, end }) {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.scss";
-import logo from "../assets/agni.png";
+import logo from "../assets/agni.webp";
 import DefaultNav from "../components/DefaultNav";
 import Features from "../components/Home/Features";
 import Improvements from "../components/Home/Improvements";
