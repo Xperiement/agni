@@ -29,13 +29,18 @@ export default function Card({ data }) {
         </div>
 
         <div className="rCont">
-          <div className="downloadBtn">
+          <a
+            className="downloadBtn"
+            href={data.url}
+            target="_blank"
+            rel="noreferrer"
+          >
             <i className="ri-download-cloud-2-line"></i>
             <div className="iCont">
               <div className="title">Download</div>
               <div className="size">{data.size}</div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
 
